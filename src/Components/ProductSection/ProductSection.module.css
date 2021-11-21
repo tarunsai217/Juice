@@ -1,0 +1,34 @@
+.productSection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.options button{
+    background-color:#eee;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin:0 20px 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Philosopher';
+    transition: 0.45s;
+}
+
+/* Featured Button styling */
+.options button:first-child{
+    background-color: #81ba00 ;
+    color: white;
+}
+
+.options button:hover{
+    background-color: #81ba00 ;
+    color: white;
+}
+
+.productContainer{
+    max-width: 1000px;
+    margin: 30px auto 0px auto;
+}

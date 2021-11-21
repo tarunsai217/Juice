@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+.siteHeader {
+    position: fixed;
+    width: 100%;
+    padding: 0 25px;
+    background-color: #000;
+    z-index: 999;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand{
+display: flex;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.navigation{
+    display: flex;
+    align-content: center;
+}
+
+.navigationList{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    color: aliceblue;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    
+}
+.listElements{
+    position: relative;
+    padding: 10px;
+    padding-left: 5px;
+    color: aliceblue;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    place-items: center;
+    transition: 0.45s ease-in-out;
+}
+
+.listElements:hover{
+    color: #81ba00;
+    font-weight: 400;
+}
+
+.listElements li::before{
+    content: '';
+    position: absolute;
+    background-color: #81ba00;
+    bottom: 0;
+    width: 45%;
+    height: 3.5px;
+    transition: 0.55s ease-in;
+    visibility: hidden;
+    transform: scaleX(100%);
+    transform-origin: left;
+}
+
+.listElements:hover li::before{
+    visibility: visible;
+    transition: 0.25s ease-out;
+    transform:scaleX(200%);
+}

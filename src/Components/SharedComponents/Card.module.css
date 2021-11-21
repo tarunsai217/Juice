@@ -1,0 +1,57 @@
+.card{
+    display: flex;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer{
+display: flex;
+place-items: center;
+} 
+.imageContainer img{
+    position: relative;
+    width: 52px;
+    transition: 0.55s;
+}
+
+/* .imageContainer img::before{
+  z-index: 555;
+    content: 'advjavjh';
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url(https://live-demo.wooskins.com/themes/ws-juice/wp-content/themes/ws-juice/images/service-bg-1.png);
+    width: 100px;
+    height: 100px;
+} */
+.imageContainer img::after{
+  background: rgba(0, 0, 0, 0) url(https://live-demo.wooskins.com/themes/ws-juice/wp-content/themes/ws-juice/images/service-bg-1.png) no-repeat scroll 0 0 / contain;
+  content: "";
+  height: 100px;
+  left: 0;
+  z-index: -1;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -24px;
+  width: 100px;
+}
+.imageContainer img:hover {
+  transform: rotateY(180deg);
+}
+
+
+.textContainer h3{
+ font-size: 24px;
+ font-weight:400 ;
+ margin-bottom: 12px;
+}
+
+.textContainer p{
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 30px;
+}
