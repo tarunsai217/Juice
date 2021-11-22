@@ -90,12 +90,17 @@
 
 .child2Image img{
     width: 90%;
+    padding-left:25px;
+}
+
+.child2Image{
+    margin:0 25px;
 }
 
 .cardContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
@@ -333,13 +338,26 @@ width: 50%;
 /* Section7 */
 /* Footer */
 .footer{
+    position: relative;
     margin-top: 50px;
-    height: 580px;
+    height: 570px;
     width: 100%;
     background: url(https://live-demo.wooskins.com/themes/ws-juice/wp-content/uploads/2020/02/tes3.jpg) no-repeat;
     background-size: contain;
     display: flex;
     place-items: center;
+    font-weight: 550;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+.footer::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    
 }
 
 .footerContainer{
@@ -349,6 +367,7 @@ width: 50%;
     max-width: 1200px;
     margin:30px auto 0 auto;
     letter-spacing: 0.8px;
+    margin-top: -40px;
 }
 .footerContainer >*{
     width: 30%;
@@ -370,6 +389,7 @@ width: 50%;
 
 .categoriesBlog ul{
     padding-left: 15px;
+    padding-top: 20px;
 }
 
 .categoriesBlog ul li {
