@@ -43,7 +43,7 @@ padding-bottom: 10px;
     padding: 10px;
     padding-left: 5px;
     color: aliceblue;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     display: flex;
     place-items: center;
@@ -52,7 +52,7 @@ padding-bottom: 10px;
 
 .listElements:hover{
     color: #81ba00;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .listElements li::before{
@@ -72,4 +72,8 @@ padding-bottom: 10px;
     visibility: visible;
     transition: 0.25s ease-out;
     transform:scaleX(200%);
+}
+
+.listElements:hover ul:nth-child(2){
+    display: block;
 }
